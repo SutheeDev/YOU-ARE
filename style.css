@@ -2,4 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Vilane";
+  src: url(/assets/fonts/Vilane-Font/Vilane\ Bold.ttf) format("truetype"), url(/assets/fonts/Vilane-Font/Vilane\ Extra\ Light.ttf) format("truetype"), url(/assets/fonts/Vilane-Font/Vilane\ Light.ttf) format("truetype"), url(/assets/fonts/Vilane-Font/Vilane\ Medium.ttf) format("truetype"), url(/assets/fonts/Vilane-Font/Vilane\ Regular.ttf) format("truetype"), url(/assets/fonts/Vilane-Font/Vilane\ Semi\ Bold.ttf) format("truetype"), url(/assets/fonts/Vilane-Font/Vilane\ Thin.ttf) format("truetype");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1, .words {
+  font-family: "Vilane", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 3vw + 2rem, 5rem);
+}
+
+div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
