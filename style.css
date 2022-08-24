@@ -11,6 +11,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background-color: #FF0035;
 }
 
@@ -27,15 +28,29 @@ div {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  flex-basis: 0;
-  margin-top: 50vh;
-  transform: translateY(-50%);
+  display: flex;
+  overflow: hidden;
 }
-
-h1 {
+div h1 {
   display: inline-block;
+  padding: 50% 0;
 }
-
-.words {
+div .words {
+  display: inline-block;
   margin-left: 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50%;
+  position: relative;
+  -webkit-text-stroke: 3px #f1f1f1;
+}
+div .words::after {
+  content: "awesome";
+  color: #FF0035;
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  z-index: -1;
+  -webkit-text-stroke: 2.5px #f1f1f1;
 }/*# sourceMappingURL=style.css.map */
