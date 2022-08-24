@@ -21,21 +21,29 @@ $turquoise: #45F0DF;
 $silver: #8B939C;
 $red: #FF0035;
 $black: #0E131F;
+$white: #f1f1f1;
 body {
     width: 100vw;
     height: 100vh;
+    background-color: $red;
 }
 h1, .words {
     font-family: $vilane;
     text-transform: uppercase;
     font-size: clamp(1rem, 3vw + 2rem, 5rem);
-    
+    letter-spacing: 5px;
+    color: $white;
 }
 div {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    flex-basis: 0;
+    margin-top: 50vh;
+    transform: translateY(-50%);
 }
 h1 {
     display: inline-block;
+}
+.words {
+    margin-left: 1rem;
 }

@@ -11,20 +11,31 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #FF0035;
 }
 
 h1, .words {
   font-family: "Vilane", sans-serif;
   text-transform: uppercase;
   font-size: clamp(1rem, 3vw + 2rem, 5rem);
+  letter-spacing: 5px;
+  color: #f1f1f1;
 }
 
 div {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  flex-basis: 0;
+  margin-top: 50vh;
+  transform: translateY(-50%);
 }
 
 h1 {
   display: inline-block;
+}
+
+.words {
+  margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */
