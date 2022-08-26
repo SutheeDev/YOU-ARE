@@ -22,47 +22,7 @@ $silver: #8B939C;
 $red: #FF0035;
 $black: #0E131F;
 $white: #f1f1f1;
-// body {
-//     width: 100vw;
-//     height: 100vh;
-//     overflow: hidden;
-//     background-color: $red;
-// }
-// h1, .words {
-//     font-family: $vilane;
-//     text-transform: uppercase;
-//     font-size: clamp(1rem, 3vw + 2rem, 5rem);
-//     letter-spacing: 5px;
-//     color: $white;
-// }
-// div {
-//     width: fit-content;
-//     height: 100vh;
-//     margin: 0 auto;
-//     display: flex;
-//     overflow: hidden;
-//     h1 {
-//         display: inline-block;
-//         padding: 50% 0;
-//     }
-//     .words {
-//         display: inline-block;
-//         margin-left: 1rem;
-//         height: fit-content;
-//         margin-top: 50%;
-//         position: relative;
-//         -webkit-text-stroke: 3px $white;
-//         &::after {
-//             content: 'awesome';
-//             color: $red;
-//             position: absolute;
-//             bottom: -5rem;
-//             left: 0;
-//             z-index: -1;
-//             -webkit-text-stroke: 2.5px $white;
-//         }
-//     }
-// }
+
 body {
     width: 100vw;
     height: 100vh;
@@ -88,10 +48,19 @@ body {
             color: $white;
             line-height: 1.3;
         }
-        .stroke {
-            -webkit-text-stroke: 2px $white;
-            color: $red;
-            // display: none;
+        .wordsList {
+            // position: relative;
+            .main {
+                position: relative;
+                z-index: 50;
+            }
+            .stroke {
+                -webkit-text-stroke: 2px $white;
+                color: $red;
+                position: relative;
+                z-index: 1;
+                // display: none;
+            }
         }
     }
 }
