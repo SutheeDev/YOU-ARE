@@ -169,10 +169,3 @@ document.addEventListener('DOMContentLoaded', () => {
             .add(() => changeColor(4))
             .add(insertText10, '+=1')
 });
-
-// $white: #f1f1f1;
-// $jasmine: #FFE381;
-// $turquoise: #45F0DF;
-// $silver: #8B939C;
-// $red: #FF0035;
-// $black: #0E131F;
